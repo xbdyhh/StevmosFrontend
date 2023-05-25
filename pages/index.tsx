@@ -14,7 +14,7 @@ import ListItemText from '@mui/material/ListItemText';
 import moment from 'moment';
 
 
-import Abi from "./abi";
+import Abi from "../abi";
 import { useAccount, useContractRead, useContractWrite, usePrepareContractWrite } from 'wagmi';
 import { fetchBalance } from '@wagmi/core'
 import { getAccount } from '@wagmi/core'

@@ -3,17 +3,11 @@ import '@rainbow-me/rainbowkit/styles.css';
 import { getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import type { AppProps } from 'next/app';
 import { configureChains, createConfig, WagmiConfig } from 'wagmi';
-import { arbitrum, goerli, mainnet, optimism, polygon } from 'wagmi/chains';
 import { publicProvider } from 'wagmi/providers/public';
+import {evmosTestnet} from "viem/chains";
 
 const { chains, publicClient, webSocketPublicClient } = configureChains(
-  [
-    mainnet,
-    polygon,
-    optimism,
-    arbitrum,
-    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === 'true' ? [goerli] : []),
-  ],
+  [evmosTestnet],
   [publicProvider()]
 );
 

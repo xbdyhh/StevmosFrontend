@@ -3,7 +3,7 @@
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 10vh;
   padding: 4rem 0;
   flex: 1;
   display: flex;
@@ -11,7 +11,27 @@
   justify-content: center;
   align-items: center;
 }
+.connectButton{
+  position: relative;
+  left: 100px;
+  top: 50px;
+}
 
+.textField{
+  height: 100px;
+  width: 400px;
+}
+
+.actionButton{
+  position: relative;
+  left:150px;
+}
+
+.claimButton{
+  position: relative;
+  top:10px;
+  left:200px;
+}
 .footer {
   display: flex;
   flex: 1;
@@ -49,15 +69,27 @@
 .description {
   text-align: center;
 }
+.list{
+  width: 300px;
+}
 
 .description {
   margin: 0 0 2rem;
   line-height: 1.5;
   font-size: 1.5rem;
 }
-
+.space{
+  display: flex;
+  height: 50px;
+  width: 1000px;
+}
 .grid {
   display: flex;
+  height: 400px;
+  width: 1000px;
+  border-style:solid;
+  border-width:1px;
+  border-radius: 25px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
@@ -96,7 +128,7 @@
 
 @media (max-width: 600px) {
   .grid {
-    width: 100%;
+    width:100%;
     flex-direction: column;
   }
 }
